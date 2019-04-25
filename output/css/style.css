@@ -1,0 +1,170 @@
+* {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display: flex;
+    height: 50px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.content-container {
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    border-right: 1px solid rgba(0,0,0, 0.1);
+    height: calc(100vh - 50px);
+}
+
+.nav-item{
+    padding: 10px ;
+    border-top: solid 1px #e7e8ec;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background: #f5f7fa;
+}
+
+.dynamic-container {
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    height: 100%;
+}
+.back-to-dialogs {
+    color:  #818d99;
+    display: inline-flex;
+    padding: 10px 20px;
+    background: transparent;
+}
+
+.back-to-dialogs::before {
+    font-family: "FontAwesome";
+    content: '\f053';
+    padding-right: 10px;
+}
+
+.rooms-container {
+    height: calc(100vh - 50px);
+    background: #edeef0;
+}
+
+.room-container {
+    padding: 10px;
+    border-top: solid 1px #e7e8ec;
+    background: #f5f7fa;
+    cursor: pointer;
+}
+
+.room-container:hover {
+    background: #edeef0;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    height: calc(100vh - 50px);
+}
+
+.msg-container {
+    flex-basis: 85%;
+    overflow-y: auto;
+    margin-top: 40px;
+}
+
+.chatroom-header {
+    position: fixed;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: -40px;
+}
+
+.chat-msg{
+    margin: 10px 10px 10px 30px;
+}
+
+.post-msg-container {
+    display: flex;
+    flex-basis: 15%;
+    background: #fafbfc;
+    border-top: 1px solid #d7d8db;
+}
+
+.post-msg-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
+.post-msg-form input {
+    flex-basis: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 20px 10px 15px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+    border: solid 1px #d3d9de;
+    outline: none;
+}
+
+.send-btn {
+    color: #000000;
+    padding: 0.9em 1.8em;
+    background-color: #fff;
+    border: 1px solid #F5CA00;
+    border-radius: 10px;
+    box-shadow: 0 0 1em 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-btn:hover {
+    color: #fff;
+    background-color: #F5CA00;
+}
+
+
+@font-face {
+    font-family: "FontAwesome";
+    src : url("fonts/fontawesome/fa-regular-400.eot");
+    src : url("fonts/fontawesome/fa-regular-400.eot") format("embedded-opentype"),
+    url("fonts/fontawesome/fa-regular-400.woff2") format("woff2"),
+    url("fonts/fontawesome/fa-regular-400.woff") format("woff"),
+    url("fonts/fontawesome/fa-regular-400.ttf") format("truetype"),
+    url("fonts/fontawesome/fa-regular-400.svg") format("svg");
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('fonts/trebuchet/TrebuchetMS.eot');
+    url('fonts/trebuchet/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+    url('fonts/trebuchet/TrebuchetMS.woff') format('woff'),
+    url('fonts/trebuchet/TrebuchetMS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
